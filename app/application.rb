@@ -14,7 +14,7 @@ class Application
       search_term = req.params["q"]
       resp.write handle_search(search_term)
     else
-      resp.write "We don't have that item"
+      resp.write "Path Not Found"
     end
 
     resp.finish
